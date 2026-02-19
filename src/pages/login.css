@@ -57,7 +57,7 @@ body::before {
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-    height: 500px;
+    height: 600px;
     width: 400px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -72,24 +72,37 @@ label{
     font-family: "Federant", serif;
     border-radius: 20px;
     line-height: 3;
+    margin-left: 30px;
 }
 
+
+/* Login Button */
 button{
-    left: 25%;
-    position: absolute;
+    display: flex;
+    margin-left: 22px;
     height: 50px;
-    width: 200px;
+    width: 360px;
     align-items: center;
     justify-content: center;
     background-color:crimson; 
-    border-radius: 20px;
+    border-radius: 30px;
     color: white;
     border:none;
-
     font-family: "Federant", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
+
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: translateY(-6px);  /* 🔼 lift effect */
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.4),
+        0 0 15px crimson,
+        0 0 30px rgba(220, 20, 60, 0.6);
 }
 
 h1{
@@ -97,29 +110,72 @@ h1{
     gap: 20px 20px 20px 20px;
     font-family: "Federant";
     font-weight: px;
-    line-height: 4.5;
 }
 
 input{
-    height: 30px;
-    width: 250px;
-    border-radius: 8px;
+    margin-left: 20px;
+    height: 40px;
+    width: 350px;
+    border-radius:25px;
     border: none;
-    background: #d2d4de66;
-    color:white;
-    
+    background: var(--surface);
+    color: var(--text);
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
+
 h4{
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    line-height: 3;
+    line-height: 2;
+    margin-top: -4px;
+
+    font-family: "Federant", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: px;
 }
 a{
     margin-left: 4px;
     text-decoration: none;
     color: rgb(210, 44, 44);
 }
+
+input:hover {
+    transform: translateY(-6px);  /* 🔼 lift effect */
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.4),
+        0 0 15px crimson,
+        0 0 30px rgba(220, 20, 60, 0.6);
+}
+
+.Signin{
+    display: flex;
+    align-items: center;
+    justify-items: space-evenly;
+}
+button.signin{
+    border-radius: 10px;
+    background-color: #E4E6EB;
+    width: 150px;
+    height: 70px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 14px;
+    font-family: noto;
+}
+
+i{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1px;
+    color: #14151A;
+    
+}   
