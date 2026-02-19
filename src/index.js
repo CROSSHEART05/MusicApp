@@ -3,5 +3,4 @@ gsap.from( ".message",{
     duration:1,
     delay:1,
     opacity : 0
-}
-) 
+}) 
